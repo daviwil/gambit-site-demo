@@ -1,12 +1,146 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="site.css">
+
     <title>Gambit Scheme</title>
   </head>
   <body>
-    <h1>Gambit Scheme</h1>
-    <h3>Documentation</h3>
-    <ul>
-      <li><a href="/docs/latest/gambit.html">Gambit Scheme <pre>master</pre></a></li>
-    </ul
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img height="32" src="gambit.png" /> Gambit Scheme</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="docs/getting-started.html">Getting Started</a>
+                <a class="dropdown-item" href="#">Latest Release</a>
+                <a class="dropdown-item" href="#">Development Release</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://gambitscheme.org">Wiki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/gambit/gambit">Releases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/gambit/gambit">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Gambit Scheme</h1>
+          <p>Gambit distills three decades of compiler research into a unique blend of speed, portability and power.
+
+Approach the speed and compatibility of C in one of the most elegant and expressive languages ever designed.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Get Started &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Fast</h2>
+            <p>
+              <ul>
+                <li><strong>Fast code.</strong> Gambit is one of the fastest dynamic language implementations.</li>
+                <li><strong>Fast compiler.</strong> The compiler runs fast and generates fast code by default.</li>
+                <li><strong>Fast interpreter.</strong> Convenient interactive development before compilation.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h2>Portable</h2>
+            <p>
+              <ul>
+                <li>The <i>gsc</i> compiler generates extremely portable C code with optional system-dependent features.</li>
+                <li><i>gsc</i> calls upon the system C compiler to create ready-to-run executables.</li>
+                <li>Has run on Nintendo DS, routers and FPGAs among others.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h2>Concurrent</h2>
+            <p>
+              <ul>
+                <li>Millions of lightweight threads on a typical server.</li>
+                <li>Messaging with higher-order channels.</li>
+                <li>Erlang-like concurrency primitives with Scheme syntax.</li>
+              </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="container">
+          <div class="row">
+
+            <h2>About Gambit</h2>
+
+            <p class="lead">
+              First released in 1988, Gambit is the third-oldest Scheme implementation still in use. Gambit's compiler and runtime have continually served as a platform for university research on compiler techniques and concurrent systems, allowing them to be refined over the decades to tackle the complex goal of speed, portability and concurrency in a single system. The result is a practical language implementation that has not abandoned simplicity in the pursuit of performance. A simple design leads to a system that does not only look good in benchmarks but is also pleasant to use.
+            </p>
+
+          </div>
+
+          <hr />
+
+          <div class="row">
+
+            <h2>Installing Gambit</h2>
+
+            <p>
+              Gambit Scheme is available in many package managers across operating systems and distributions:
+              <dl class="row">
+                <dt class="col-sm-3">Windows:</dt><dd class="col-sm-9">choco install gambit</dd>
+                <dt class="col-sm-3">MacOS:</dt><dd class="col-sm-9">brew install gambit-scheme</dd>
+                <dt class="col-sm-3">Ubuntu Linux / Debian Linux:</dt><dd class="col-sm-9">sudo apt install gambc</dd>
+                <dt class="col-sm-3">Arch Linux:</dt><dd class="col-sm-9">sudo pacman install gambit-c</dd>
+                <dt class="col-sm-3">Fedora Linux:</dt><dd class="col-sm-9">sudo yum install gambit-c</dd>
+                <dt class="col-sm-3">FreeBSD:</dt><dd class="col-sm-9">sudo pkg install gambit-c</dd>
+                <dt class="col-sm-3">DragonFly BSD:</dt><dd class="col-sm-9">sudo pkg install gambit-c</dd>
+                <dt class="col-sm-3">OpenBSD:</dt><dd class="col-sm-9">sudo pkg_add gambit-c</dd>
+                <dt class="col-sm-3">NetBSD:</dt><dd class="col-sm-9">sudo pkg_add gambc</dd>
+              </dl>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; Marc Feeley and contributors, 2020</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>

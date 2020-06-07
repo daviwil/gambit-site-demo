@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&family=Work+Sans&display=swap');
+
+body {
+  padding-top: 3.5rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+nav {
+  font-family: 'Titillium Web', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+/* li { */
+/*   margin-left: 0px; */
+/* } */
+
+h2 {
+  font-family:  'Titillium Web', serif;
+}
+
+footer {
+  font-family:  'Titillium Web', serif;
+}
+
+.btn {
+  font-family: 'Titillium Web', serif;
+  font-weight: 600;
+}
+
+.btn-primary{
+  color: #000000;
+  background-color: #fdf566;
+  border-color: #d6cf50;
+}
+
+.display-3 {
+  font-family: 'Titillium Web', serif;
+  font-weight: 600;
+}
